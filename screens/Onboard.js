@@ -12,20 +12,20 @@ const OnBoardingScreen = ({navigation}) => {
     return(
         <Onboarding
        
-        onSkip={()=> navigation.navigate("LoginScreen")}
-        onDone={()=> navigation.navigate("LoginScreen")}
+        onSkip={()=> navigation.navigate("WelcomeScreen")}
+        onDone={()=> navigation.navigate("HomeScreen")}
         pages={[
             {
             backgroundColor: '#95b3de',
-            image: <Image source={require('../assets/onBoardTwo.png')} />,
-            title: 'Hygenic Environment',
-            subtitle: 'We help to keep the society clean and hygine',
+            image: <Image source={require('../assets/onboarding-img1.png')} />,
+            title: 'English Learning',
+            subtitle: 'We help to keep the society to learn english and make brighter',
             },
             {
             backgroundColor: '#ffde82',
-            image: <Image source={require('../assets/onBoardOne.png')} />,
-            title: 'Clean City',
-            subtitle: 'Jatayu helps to keep the city clean',
+            image: <Image source={require('../assets/onboarding-img2.png')} />,
+            title: 'Speech to Text',
+            subtitle: 'Lewis Bot Helps to learn English Faster',
             }
         ]}
 />

@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import OnBoardingScreen from './screens/Onboard'
-import LoginScreen from './screens/Login'
+import WelcomeScreen from './screens/Welcome'
+import HomeScreen from './screens/Home';
 
 
 const Stack = createStackNavigator();
@@ -13,7 +14,9 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator headerMode="none">  
         <Stack.Screen name="OnBoardScreen" component = {OnBoardingScreen}/>
-        <Stack.Screen name="LoginScreen" component = {LoginScreen}/>
+        <Stack.Screen name="WelcomeScreen" component = {WelcomeScreen}/>
+        <Stack.Screen name="HomeScreen" component = {HomeScreen}/>
+
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -21,8 +24,3 @@ const App = () => {
 
 export default App
 
-const styles = StyleSheet.create({
-  container: {
-   
-  },
-});
